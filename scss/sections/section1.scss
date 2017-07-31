@@ -38,6 +38,9 @@
 
 .header__list-link {
     @include link-decoration;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .header__list-circle {
@@ -54,10 +57,13 @@
     background-color: #e45028;
     text-align: center;
     line-height: 35px;
+    &:hover {
+        background-color: #c1401e;
+    }
 }
 
 .order-button__link {
-    @include link-decoration; 
+    @include link-decoration;
 }
 
 .main__intro {
