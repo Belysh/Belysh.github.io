@@ -1,0 +1,67 @@
+.about {
+    background-image: url('../../img/sections/bg-2.jpg');
+    background-size: cover;
+    background-position: bottom; 
+}
+
+.about__container {
+    display: flex; 
+    width: 1100px;
+    justify-content: center;
+}
+
+.meat-container, .hand-container, .natural-container {
+    display: flex;
+    width: 280px; 
+    text-align: center;
+    justify-content: center; 
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.about__headline {
+    color: #2f3234;
+    font-family: Lifehack;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.about__text {
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

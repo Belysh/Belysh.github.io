@@ -1,0 +1,111 @@
+.comments {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.comments__photo {
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    &:hover .comment-wrap {
+        opacity: 1;
+    }
+}
+
+.comments__photo-1 {
+    background-image: url(../../img/comments/photo-1.png)
+}
+
+.comments__photo-2 {
+    background-image: url(../../img/comments/photo-2.png)
+}
+
+.comments__photo-3 {
+    background-image: url(../../img/comments/photo-3.png)
+}
+
+.comments__photo-4 {
+    background-image: url(../../img/comments/photo-4.png)
+}
+
+.comments__photo-5 {
+    background-image: url(../../img/comments/photo-5.png)
+}
+
+.comments__photo-6 {
+    background-image: url(../../img/comments/photo-6.png)
+}
+
+.comments__photo-7 {
+    background-image: url(../../img/comments/photo-7.png)
+}
+
+.comments__photo-8 {
+    background-image: url(../../img/comments/photo-8.png)
+}
+
+.comment-wrap {
+    opacity: 0;
+    transition: .5s;
+}
+
+.comment-headline {
+    font-family: Gagalin;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.comment-text {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    max-height: 195px;;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.comment-button {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #1f2122;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 5%;
+    &:hover {
+            background-color: #2f3234;
+    }
+}
+
+.comment-button__link {
+    display: block;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
