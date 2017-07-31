@@ -272,9 +272,25 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 30px; }
+  padding: 30px;
+  position: relative; }
+  .comments__photo:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #4d4d4d;
+    resize: 1;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
   .comments__photo:hover .comment-wrap {
     opacity: 1; }
+  .comments__photo:hover::after {
+    opacity: .8; }
 
 .comments__photo-1 {
   background-image: url(../../img/comments/photo-1.png); }
@@ -304,7 +320,8 @@
   opacity: 0;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  z-index: 2; }
 
 .comment-headline {
   font-family: Gagalin;

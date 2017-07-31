@@ -13,8 +13,25 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: #4d4d4d;
+        resize: 1;
+        transition: .5s;
+    }
     &:hover .comment-wrap {
         opacity: 1;
+    }
+    
+    &:hover::after {
+        opacity: .8;
     }
 }
 
@@ -53,6 +70,7 @@
 .comment-wrap {
     opacity: 0;
     transition: .5s;
+    z-index: 2;
 }
 
 .comment-headline {
