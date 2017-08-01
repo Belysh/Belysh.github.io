@@ -135,7 +135,7 @@
   border-radius: 5px;
   background-color: #e45028;
   text-align: center;
-  line-height: 35px; }
+  line-height: 34px; }
   .order-button:hover {
     background-color: #c1401e; }
 
@@ -207,34 +207,47 @@
   display: -ms-flexbox;
   display: flex;
   width: 1100px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.meat-container, .hand-container, .natural-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 280px;
-  text-align: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 15px; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.about__list {
+  list-style: none;
+  margin-top: 50px; }
+
+.about__list-item {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+  vertical-align: top; }
+
+.about__headline-text {
+  color: #2f3234;
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400; }
+
+.about__img-wrap {
+  height: 90px; }
+
+.about__img {
+  height: 100%; }
 
 .about__headline {
   color: #2f3234;
   font-family: Lifehack;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 30px; }
 
 .about__text {
