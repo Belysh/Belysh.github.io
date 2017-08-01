@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .section {
     width: 100%;
     height: 100vh;
-    display: flex;
     min-height: 650px;
-    justify-content: center;
-    
 }
+

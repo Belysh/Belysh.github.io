@@ -1,4 +1,5 @@
 .comments {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -7,8 +8,8 @@
     width: 25%;
     height: 50%;
     background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
+    background-position: center top;
+    filter: grayscale(1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,8 +23,7 @@
         height: 100%;
         width: 100%;
         transform: scale(0);
-        opacity: .8;
-        background-color: #4d4d4d;
+        background-color: rgba(22,22,22,0.7);
         transition: .5s;
     }
     &:hover .comment-wrap {
@@ -33,38 +33,6 @@
     &:hover::after {
         transform: scale(1);
     }
-}
-
-.comments__photo-1 {
-    background-image: url(../../img/comments/photo-1.png)
-}
-
-.comments__photo-2 {
-    background-image: url(../../img/comments/photo-2.png)
-}
-
-.comments__photo-3 {
-    background-image: url(../../img/comments/photo-3.png)
-}
-
-.comments__photo-4 {
-    background-image: url(../../img/comments/photo-4.png)
-}
-
-.comments__photo-5 {
-    background-image: url(../../img/comments/photo-5.png)
-}
-
-.comments__photo-6 {
-    background-image: url(../../img/comments/photo-6.png)
-}
-
-.comments__photo-7 {
-    background-image: url(../../img/comments/photo-7.png)
-}
-
-.comments__photo-8 {
-    background-image: url(../../img/comments/photo-8.png)
 }
 
 .comment-wrap {

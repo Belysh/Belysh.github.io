@@ -1,7 +1,10 @@
 .about {
     background-image: url('../../img/sections/bg-2.jpg');
     background-size: cover;
-    background-position: bottom; 
+    background-position: bottom;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .about__container {
@@ -14,7 +17,7 @@
 
 .about__list {
     list-style: none;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .about__list-item {
@@ -22,13 +25,14 @@
     width: 300px;
     text-align: center;
     vertical-align: top;
+    margin-right: 10px;
 }
 
 .about__headline-text {
     color: #2f3234;
     font-family: Gagalin;
     font-size: 72px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .about__img-wrap {

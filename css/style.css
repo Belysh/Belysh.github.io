@@ -40,18 +40,21 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.section {
-  width: 100%;
-  height: 100vh;
+.wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 650px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.section {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px; }
 
 .main {
   background-image: url(../../img/sections/bg-1.jpg);
@@ -182,24 +185,39 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 10px; }
 
 .intro__text-headline {
   color: #f9b43b;
   font-family: Gagalin;
-  font-size: 72px; }
+  font-size: 72px;
+  margin-top: -90px; }
 
 .intro__text-main {
   color: white;
   font-family: Lifehack;
   font-size: 65px;
   font-weight: 500;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  margin-top: 20px; }
 
 .about {
   background-image: url("../../img/sections/bg-2.jpg");
   background-size: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .about__container {
   display: -webkit-box;
@@ -223,13 +241,14 @@
 
 .about__list {
   list-style: none;
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 .about__list-item {
   display: inline-block;
   width: 300px;
   text-align: center;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-right: 10px; }
 
 .about__headline-text {
   color: #2f3234;
@@ -259,7 +278,18 @@
   line-height: 24px;
   margin-top: 25px; }
 
+.menu {
+  background-color: #f9b43b;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
+  background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%); }
+
 .comments {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -273,9 +303,9 @@
   width: 25%;
   height: 50%;
   background-size: cover;
-  background-position: center;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background-position: center top;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -301,8 +331,7 @@
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    opacity: .8;
-    background-color: #4d4d4d;
+    background-color: rgba(22, 22, 22, 0.7);
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
@@ -314,30 +343,6 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
-
-.comments__photo-1 {
-  background-image: url(../../img/comments/photo-1.png); }
-
-.comments__photo-2 {
-  background-image: url(../../img/comments/photo-2.png); }
-
-.comments__photo-3 {
-  background-image: url(../../img/comments/photo-3.png); }
-
-.comments__photo-4 {
-  background-image: url(../../img/comments/photo-4.png); }
-
-.comments__photo-5 {
-  background-image: url(../../img/comments/photo-5.png); }
-
-.comments__photo-6 {
-  background-image: url(../../img/comments/photo-6.png); }
-
-.comments__photo-7 {
-  background-image: url(../../img/comments/photo-7.png); }
-
-.comments__photo-8 {
-  background-image: url(../../img/comments/photo-8.png); }
 
 .comment-wrap {
   -webkit-transform: scale(0);

@@ -87,12 +87,14 @@
 .intro__text-wrap {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .intro__text-headline {
     color: #f9b43b;
     font-family: Gagalin;
     font-size: 72px; 
+    margin-top: -90px;
 }
 
 .intro__text-main {
@@ -100,5 +102,6 @@
     font-family: Lifehack;
     font-size: 65px;
     font-weight: 500;
-    text-transform: lowercase; 
+    text-transform: lowercase;
+    margin-top: 20px;
 }
