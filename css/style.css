@@ -74,7 +74,12 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden; }
 
 .header {
   display: -webkit-box;
@@ -126,7 +131,8 @@
   text-transform: uppercase;
   font-size: 13px;
   font-family: 'Ubuntu';
-  font-weight: normal; }
+  font-weight: normal;
+  vertical-align: middle; }
   .header__list-link:hover {
     text-decoration: underline; }
 
@@ -282,26 +288,6 @@
   background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
   background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%); }
-
-.menu__container {
-  width: 0px;
-  margin: 100px;
-  border-top: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-left: 30px solid transparent;
-  border-bottom: 100px solid black;
-  position: relative; }
-  .menu__container:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 85px;
-    right: -29.75px;
-    margin-left: -15px;
-    width: 59.5px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: black; }
 
 .comments {
   display: -webkit-box;
