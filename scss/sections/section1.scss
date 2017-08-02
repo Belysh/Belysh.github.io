@@ -15,7 +15,7 @@
     height: 90px;
     width: 950px; 
     justify-content: flex-end;
-    align-items: center; 
+    align-items: center;
 }
 
 .logo-wrapper {
@@ -28,12 +28,28 @@
 }
 
 .header__list {
-    display: flex;
     list-style: none;
-    justify-content: space-between;
-    width: 510px;
-    align-items: center;
-    margin-right: 15px; 
+    margin-right: 20px;
+    font-size: 0;
+}
+
+.header__list-item {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: ' ';
+        height: 4px;
+        width: 4px;
+        background-color: white;
+        margin: 0 16px;
+        border-radius: 50%;
+  }
+    &:last-child:after {
+        display: none;
+  }
 }
 
 .header__list-link {
@@ -41,13 +57,6 @@
     &:hover {
         text-decoration: underline;
     }
-}
-
-.header__list-circle {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: white;
 }
 
 .order-button {
