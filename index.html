@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <title>MrBurger</title>
@@ -41,7 +43,11 @@
                     <div class="about__headline"><h1 class="about__headline-text">Мы лучшие</h1></div>
                     <ul class="about__list">
                         <li class="about__list-item">
-                            <div class="about__img-wrap"><img class="about__img" src="img/icons/meat.svg"/></div>
+                            <div class="about__img-wrap">
+                                <svg class="about__img about__img-meat">
+                                    <use xlink:href="../../sprite/sprite.svg#meat"></use>
+                                </svg>
+                            </div>
                             <div class="about__headline">
                                 100% свежее мясо
                             </div>
@@ -50,7 +56,11 @@
                             </div>
                         </li>
                         <li class="about__list-item">
-                            <div class="about__img-wrap"><img class="about__img" src="img/icons/hand.svg"/></div>
+                            <div class="about__img-wrap">
+                                <svg class="about__img about__img-hand">
+                                    <use xlink:href="../../sprite/sprite.svg#hand"></use>
+                                </svg>
+                            </div>
                             <div class="about__headline">
                                 Ручная  сборка
                             </div>
@@ -59,7 +69,11 @@
                             </div>
                         </li>
                         <li class="about__list-item">
-                            <div class="about__img-wrap"><img class="about__img" src="img/icons/natural.svg"/></div>
+                            <div class="about__img-wrap">
+                                <svg class="about__img about__img-natural">
+                                    <use xlink:href="../../sprite/sprite.svg#natural"></use>
+                                </svg>
+                            </div>
                             <div class="about__headline">
                                 Натуральные ингредиенты
                             </div>
@@ -70,18 +84,118 @@
                     </ul>
                 </div>
             </section>
+            <section class="section burgers">
+                <div class="burgers__container">
+                </div>
+            </section>
+            <section class="section team">
+                <div class="team__container">
+                    <div class="members-list-wrapper">
+                        <div class="team__headline">команда</div>
+                        <ul class="members-list">
+                            <li class="members-list__item">
+                                <div class="members-list__member-name">
+                                    Дэниэл Редклиф
+                                </div>
+                                <div class="members-list__member-info">
+                                    <div class="members-list__image-wrapper">
+                                        <img src="img/sections/Richard.jpg"/>
+                                    </div>
+                                    <div class="members-list__text-wrapper">
+                                        <div class="members-list__headline">Оператор</div>
+                                        <div class="members-list__text">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="members-list__item members-list__item--active">
+                                <div class="members-list__member-name">
+                                    Ричард Джеймс
+                                </div>
+                                <div class="members-list__member-info">
+                                    <div class="members-list__image-wrapper">
+                                        <img src="img/sections/Richard.jpg"/>
+                                    </div>
+                                    <div class="members-list__text-wrapper">
+                                        <div class="members-list__headline">Оператор</div>
+                                        <div class="members-list__text">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="members-list__item">
+                                <div class="members-list__member-name">
+                                    Джейк Финн
+                                </div>
+                                <div class="members-list__member-info">
+                                    <div class="members-list__image-wrapper">
+                                        <img src="img/sections/Richard.jpg"/>
+                                    </div>
+                                    <div class="memberl-list__text-wrapper">
+                                        <div class="members-list__headline">Оператор</div>
+                                        <div class="members-list__text">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="members-list__item">
+                                <div class="members-list__member-name">
+                                    Николай Иванов
+                                </div>
+                                <div class="members-list__member-info">
+                                    <div class="members-list__image-wrapper">
+                                        <img src="img/sections/Richard.jpg"/>
+                                    </div>
+                                    <div class="members-list__text-wrapper">
+                                        <div class="members-list__headline">Оператор</div>
+                                        <div class="members-list__text">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section class="section menu">
                 <div class="menu__container">
-                </div>
-            </section>
-            <section class="section">
-                <div class="container">
-                
-                </div>
-            </section>
-            <section class="section">
-                <div class="container">
-                
+                    <div class="menu__headline">Меню</div>
+                    <ul class="menu-list">
+                        <li class="menu-list__item menu-list__item--active">
+                            <div class="menu-list__accordeon-part menu-list__accordeon-part-first"></div>
+                            <div class="menu-list__filter"></div>
+                            <div class="menu-list__info"> 
+                                <p>
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="menu-list__accordeon-part menu-list__accordeon-part-second"></div>
+                            <div class="menu-list__filter"></div>
+                            <div class="menu-list__info">
+                                <p>
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-list__item">
+                            <div class="menu-list__accordeon-part menu-list__accordeon-part-third"></div>
+                            <div class="menu-list__filter"></div>
+                            <div class="menu-list__info">
+                                <p>
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="section comments">
@@ -206,15 +320,116 @@
                     </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                
+            <section class="section form-page">
+                <div class="form-page__container">
+                    <div class="form__headline">Закажите доставку</div>
+                    <div class="form-wrapper">
+                        <form class="form">
+                            <div class="form__content-wrap">
+                                <div class="form__personal-info">
+                                    <div class="form__item form__user-name">
+                                        <label>
+                                            <p class="form__text">Имя</p>
+                                            <input type="text" class="form__input-element form__input-name">
+                                        </label>
+                                        <label>
+                                            <p class="form__text">Телефон</p>
+                                            <input type="text" class="form__input-element form__input-tel">
+                                        </label>
+                                    </div>
+                                    <div class="form__item form__user-street">
+                                        <label>
+                                            <p class="form__text">Улица</p>
+                                            <input type="text" class="form__input-element form__input-street">
+                                        </label>
+                                    </div>
+                                    <div class="form__item form__user-location">
+                                        <label>
+                                            <p class="form__text">Дом</p>
+                                            <input type="text" class="form__input-element form__input-house">
+                                        </label>
+                                        <label>
+                                            <p class="form__text">Корпус</p>
+                                            <input type="text" class="form__input-element form__input-housing">
+                                        </label>
+                                        <label>
+                                            <p class="form__text">Квартира</p>
+                                            <input type="text" class="form__input-element form__input-flat">
+                                        </label>
+                                        <label>
+                                            <p class="form__text">Этаж</p>
+                                            <input type="text" class="form__input-element form__input-floor">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form__comment">
+                                <div class="form__user-comment">
+                                        <label>
+                                            <p class="form__text">Комментарий</p>
+                                            <textarea class="form__textarea"></textarea>
+                                        </label>
+                                    </div>
+                                    <div class="form__item form__payment">
+                                        <label>
+                                            <input class="form__radio" type="radio" name="form__payment-radio">
+                                            <div class="form__radio-fake"></div>
+                                            <p class="form__text">Потребуется сдача</p>
+                                        </label>
+                                        <label>
+                                            <input class="form__radio" type="radio" name="form__payment-radio">
+                                            <div class="form__radio-fake"></div>
+                                            <p class="form__text">Оплата по карте</p>
+                                        </label>
+                                    </div>
+                                    <div class="form__item form__callback">
+                                        <label>
+                                            <input class="form__checkbox" type="checkbox">
+                                            <div class="form__checkbox-fake"></div>
+                                            <p class="form__text">Не перезванивать</p>
+                                        </label>
+                                    </div>
+                                    <div class="form__item form__checkout">
+                                        <div class="order-button"><a href="#" class="order-button__link">Заказать</a></div>
+                                        <a href="#" class="form__clear-button">Очистить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="container">
-                
-                </div>
+            <section class="section map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12584.80103060644!2d35.03873966378997!3d48.46365673118226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1502107663259" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <footer class="footer">
+                    <div class="footer__contacts">
+                        <div class="footer__adres">
+                            Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                        </div>
+                        <a href="tel: +78123771377" class="footer__tel">+7 (812) 377-13-77</a>
+                    </div>
+                    <ul class="social">
+                        <li class="social__item">
+                            <svg class="social__img socials__vk">
+                                <use xlink:href="../../sprite/sprite.svg#vk"></use>
+                            </svg>
+                        </li>
+                        <li class="social__item">
+                            <svg class="social__img socials__fb">
+                                <use xlink:href="../../sprite/sprite.svg#fb"></use>
+                            </svg>
+                        </li>
+                        <li class="social__item">
+                            <svg class="social__img socials__inst">
+                                <use xlink:href="../../sprite/sprite.svg#inst"></use>
+                            </svg>
+                        </li>
+                        <li class="social__item">
+                            <svg class="social__img socials__twitter">
+                                <use xlink:href="../../sprite/sprite.svg#twitter"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </footer>
             </section>
         </div>
     </body>
