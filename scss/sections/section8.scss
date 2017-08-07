@@ -1,0 +1,89 @@
+.map {
+    background-image: url(../../img/sections/bg-9.jpg);
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    background-color: #101010;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.footer__adres {
+    font-family: Ubuntu;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.footer__tel {
+    font-family: Ubuntu;
+    font-size: 14px;;
+    color: #e45028;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    vertical-align: middle;
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        height: 11px;
+        background-image: url(../../img/icons/phone.svg);
+        margin-right: 5px;
+    }
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+}
+
+.social__img {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    opacity: 0.3;
+    margin-right: 20px;
+    transition: .5s;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.socials__twitter {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

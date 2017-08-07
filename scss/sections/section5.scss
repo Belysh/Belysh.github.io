@@ -1,0 +1,135 @@
+.menu {
+    background-image: url(../../img/sections/bg-5.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.menu__container {
+    height: 100%;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.menu__headline {
+    margin-right: auto;
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    padding: 90px 0 0 90px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list__item {
+    display: flex;
+}
+
+.menu-list__accordeon-part {
+    width: 80px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 40px;
+        font-weight: 400;
+        white-space: nowrap;
+        transform-origin: left;
+        transform: rotate(-90deg);
+        z-index: 2;
+        bottom: 80px;
+        left: 50%;
+        
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 100vh;
+        min-height: 650px;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .5;
+        z-index: 1;
+    }
+}
+
+.menu-list__accordeon-part-first {
+    background-image: url(../../img/sections/for_meat-eaters.jpg);
+    background-size: cover;
+    background-position: center;
+    &:after {
+        content: 'Для мясоедов';
+    }
+}
+
+.menu-list__accordeon-part-second {
+    background-image: url(../../img/sections/for_vegetarians.jpg);
+    background-size: cover;
+    background-position: 770px;
+    &:after {
+        content: 'Вегетарианское';
+    }
+}
+
+.menu-list__accordeon-part-third {
+    background-image: url(../../img/sections/for_dieticians.jpg);
+    background-size: cover;
+    background-position: 540px;
+    &:after {
+        content: 'Диетическое';
+    }
+}
+
+.menu-list__info {
+    display: none;
+}
+
+.menu-list__item--active {
+    width: 900px;
+    position: relative;
+    .menu-list__accordeon-part:after {
+        color: #f9b43b;
+    }
+    .menu-list__info {
+        display: block;
+        width: 820px;
+        color: #ffffff;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        padding: 60px 30px;
+        position: relative;
+        p {
+            z-index: 1;
+        }
+    }
+    .menu-list__filter {
+        height: 100vh;
+        min-height: 650px;
+        width: 820px;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        background-color: #2f3234;
+        opacity: 0.93;
+        z-index: 0;
+    } 
+}
+
+
+
+
+
+
+
+
