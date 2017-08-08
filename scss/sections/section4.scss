@@ -52,16 +52,6 @@
 .members-list__item {
     margin-top: 35px;
     position: relative;
-    &:before {
-        content: '';
-        width: 9px;
-        height: 6px;
-        background-image: url(../../img/sections/sct3-arrow-down.png);
-        position: absolute;
-        right: 102%;
-        top: 50%;
-        margin-top: -3px;
-    }
 }
 
 .members-list__member-name {
@@ -69,6 +59,17 @@
     font-family: Gagalin;
     font-size: 14px;
     font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    &:before {
+        content: '';
+        width: 9px;
+        height: 6px;
+        background-image: url(../../img/sections/sct3-arrow-down.png);
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
 }
 
 .members-list__member-info {
@@ -76,6 +77,13 @@
 }
 
 .members-list__item--active {
+    @include tablets {
+            width: 100%;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    }
     .members-list__member-info {
         display: flex;
         align-items: center;
@@ -91,22 +99,9 @@
     .members-list__member-name {
         color: #f9b43b;
     }
-    &:before {
-        content: '';
-        width: 9px;
-        height: 6px;
+    
+    .members-list__member-name:before {
         background-image: url(../../img/sections/sct3-arrow-up.png);
-        position: absolute;
-        right: 102%;
-        top: 6%;
-        margin-top: -3px;
-    }
-    @include tablets {
-        width: 100%;
-        margin-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
     

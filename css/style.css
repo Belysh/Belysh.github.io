@@ -519,24 +519,40 @@
 .members-list__item {
   margin-top: 35px;
   position: relative; }
-  .members-list__item:before {
-    content: '';
-    width: 9px;
-    height: 6px;
-    background-image: url(../../img/sections/sct3-arrow-down.png);
-    position: absolute;
-    right: 102%;
-    top: 50%;
-    margin-top: -3px; }
 
 .members-list__member-name {
   color: #ffffff;
   font-family: Gagalin;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle; }
+  .members-list__member-name:before {
+    content: '';
+    width: 9px;
+    height: 6px;
+    background-image: url(../../img/sections/sct3-arrow-down.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; }
 
 .members-list__member-info {
   display: none; }
+
+@media screen and (max-width: 768px) {
+  .members-list__item--active {
+    width: 100%;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; } }
 
 .members-list__item--active .members-list__member-info {
   display: -webkit-box;
@@ -566,33 +582,8 @@
 .members-list__item--active .members-list__member-name {
   color: #f9b43b; }
 
-.members-list__item--active:before {
-  content: '';
-  width: 9px;
-  height: 6px;
-  background-image: url(../../img/sections/sct3-arrow-up.png);
-  position: absolute;
-  right: 102%;
-  top: 6%;
-  margin-top: -3px; }
-
-@media screen and (max-width: 768px) {
-  .members-list__item--active {
-    width: 100%;
-    margin-left: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; } }
+.members-list__item--active .members-list__member-name:before {
+  background-image: url(../../img/sections/sct3-arrow-up.png); }
 
 .members-list__text-wrapper {
   margin-left: 10px; }
