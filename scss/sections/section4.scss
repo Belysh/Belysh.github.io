@@ -21,6 +21,12 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 5.3%;
+    padding-right: 10px;
+    @include tablets {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
 }
 
 .team__headline {
@@ -34,6 +40,13 @@
     margin-top: 40px;
     margin-left: 25px;
     list-style: none;
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .members-list__item {
@@ -66,6 +79,13 @@
         display: flex;
         align-items: center;
         margin-top: 15px;
+        @include tablets {
+            width: 100%;
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    }
     }
     .members-list__member-name {
         color: #f9b43b;
@@ -80,6 +100,13 @@
         top: 6%;
         margin-top: -3px;
     }
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
     
 .members-list__text-wrapper {
@@ -88,6 +115,7 @@
 
 .members-list__image-wrapper {
     width: 100px;
+    min-width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;

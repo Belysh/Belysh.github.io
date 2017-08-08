@@ -13,11 +13,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include laptop {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
 .about__list {
     list-style: none;
     margin-top: 30px;
+    @include laptop {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .about__list-item {
@@ -26,13 +39,29 @@
     text-align: center;
     vertical-align: top;
     margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include laptop {
+        width: 33%;
+    }
+    
+    @include phones {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+    }
 }
 
 .about__headline-text {
     color: #2f3234;
     font-family: Gagalin;
     font-size: 72px;
-    font-weight: 400
+    font-weight: 400;
+    @include phones {
+        font-size: 50px;
+    }
 }
 
 .about__img-wrap {
@@ -41,6 +70,9 @@
 
 .about__img {
     height: 100%;
+    @include laptop {
+        width: 33vw;
+    }
 }
 
 .about__img-meat {
@@ -61,6 +93,9 @@
     font-size: 24px;
     font-weight: 500;
     margin-top: 30px;
+    @include tablets {
+        font-size: 22px;
+    }
 }
 
 
@@ -72,6 +107,9 @@
     font-weight: 300;
     line-height: 24px;
     margin-top: 25px;
+    @include phones {
+        font-size: 12px;
+    }
 }
 
 
