@@ -651,7 +651,7 @@
   position: relative; }
   @media screen and (max-width: 992px) {
     .menu-list__item--active {
-      max-width: calc(100vw - 170px); } }
+      max-width: calc(100vw - 160px); } }
   @media screen and (max-width: 480px) {
     .menu-list__item--active {
       max-width: 100vw;
