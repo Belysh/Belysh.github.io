@@ -15,7 +15,11 @@
     align-items: center;
     @include laptop {
         width: 100%;
+        height: 100%;
         padding: 0 10px;
+    }
+    @include phones {
+        justify-content: flex-start;
     }
 }
 

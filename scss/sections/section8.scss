@@ -15,6 +15,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
+    @include tablets {
+        padding: 0 10px;
+    }
+    @include phones {
+        height: 120px;
+        flex-direction: column;
+        justify-content:space-around;
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 .footer__adres {
