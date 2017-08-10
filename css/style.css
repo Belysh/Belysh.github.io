@@ -236,13 +236,13 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: -45px; }
 
 .intro__text-headline {
   color: #f9b43b;
   font-family: Gagalin;
-  font-size: 72px;
-  margin-top: -45px; }
+  font-size: 72px; }
   @media screen and (max-width: 480px) {
     .intro__text-headline {
       font-size: 60px; } }
