@@ -155,6 +155,7 @@
 }
 
 .header__nav-button {
+    cursor: pointer;
     width: 24px;
     height: 22px;
     display: flex;
@@ -177,9 +178,53 @@
 
 
 
+.pop-up-menu {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f3234;
+    opacity: 0.99;
+    top: -100%;
+    overflow: hidden;
+    @include phones {
+        min-height: 800px;
+        top: -800px;
+    }
+}
 
+.header__list-pop-up {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    .header__list-item:after {
+        width: 6px;
+        height: 6px;
+        display: block;
+        margin: 20px auto;
+    }
+    .header__list-item:last-child:after {
+        display: none;
+    }
+}
 
+.pop-up-link {
+    font-size: 24px;
+}
 
+.x-button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-image: url(../../img/sections/X.png);
+    position: absolute;
+    top: 32px;
+    right: 35px;
+}
 
 
 
