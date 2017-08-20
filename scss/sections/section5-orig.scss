@@ -1,0 +1,224 @@
+.menu {
+    background-image: url(../../img/sections/bg-5.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.menu__container {
+    height: 100%; 
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: flex-end;
+    @include tablets {
+        min-height: 100%;
+    }
+}
+
+.menu__headline {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    position: absolute;
+    top: 12%;
+    left: 6%;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+/*.menu-list__item {
+    display: flex;
+    transition: 1s;
+    width: 80px;
+    transition: 1s;
+}*/
+
+.menu-list__item {
+    display: flex;
+    transition: 1s;
+    position: relative;
+    @include laptop {
+        max-width: calc(100vw - 160px);
+    }
+    @include phones {
+        max-width: 100vw;
+        width: 100vw;
+        min-height: 800px;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        right: 0;
+    }
+    .menu-list__accordeon-part:after {
+        color: #f9b43b;
+    }
+    .menu-list__info {
+        @include laptop {
+            font-size: 11px;
+        }
+        p {
+            z-index: 1;
+        }
+    }
+}
+
+.menu-list__accordeon-part {
+    width: 80px;
+    position: relative;
+    @include laptop {
+        min-width: 80px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 40px;
+        font-weight: 400;
+        white-space: nowrap;
+        transform-origin: left;
+        transform: rotate(-90deg);
+        z-index: 2;
+        bottom: 80px;
+        left: 50%;
+        
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 100vh;
+        min-height: 650px;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .5;
+        z-index: 1;
+        @include phones {
+        min-height: 800px;
+        }
+    }
+}
+
+.menu-list__accordeon-part-first {
+    background-image: url(../../img/sections/for_meat-eaters.jpg);
+    background-size: cover;
+    background-position: center;
+    &:after {
+        content: 'Для мясоедов';
+    }
+}
+
+.menu-list__accordeon-part-second {
+    background-image: url(../../img/sections/for_vegetarians.jpg);
+    background-size: cover;
+    background-position: 770px;
+    &:after {
+        content: 'Вегетарианское';
+    }
+}
+
+.menu-list__accordeon-part-third {
+    background-image: url(../../img/sections/for_dieticians.jpg);
+    background-size: cover;
+    background-position: 540px;
+    &:after {
+        content: 'Диетическое';
+    }
+}
+
+.menu-list__info {
+    width: 0px;
+    overflow: hidden;
+    position: relative;
+    background-color: #2f3234;
+    opacity: 0.93;
+}
+
+.menu-list__text {
+    width: 620px;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 60px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*.menu-list__item--active {
+    width: 700px;
+    position: relative;
+    @include laptop {
+        max-width: calc(100vw - 160px);
+    }
+    @include phones {
+        max-width: 100vw;
+        width: 100vw;
+        min-height: 800px;
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+    }
+    .menu-list__accordeon-part:after {
+        color: #f9b43b;
+    }
+    .menu-list__info {
+        width: 620px;;
+        @include laptop {
+            font-size: 11px;
+        }
+        p {
+            z-index: 1;
+        }
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+.menu {
+    background-image: url(../../img/sections/bg-5.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.menu__container {
+    height: 100%; 
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: flex-end;
+    @include tablets {
+        min-height: 100%;
+    }
+}
+
+.menu__headline {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    position: absolute;
+    top: 12%;
+    left: 6%;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    @include phones {
+        min-height: 800px;
+        width: 100vw;
+        justify-content: flex-end;
+    }
+}
+
+.menu-list__item {
+    display: flex;
+    z-index: 1;
+    @include phones {
+        min-height: 800px;
+    }
+}
+
+.menu-list__accordeon-part {
+    width: 80px;
+    position: relative;
+    height: 100%;
+    @include phones {
+        min-height: 800px;
+        float: left;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 40px;
+        font-weight: 400;
+        white-space: nowrap;
+        transform-origin: left;
+        transform: rotate(-90deg);
+        z-index: 2;
+        bottom: 80px;
+        left: 50%;
+        transition: 1s;
+        
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 100vh;
+        min-height: 650px;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .5;
+        z-index: 1;
+        @include phones {
+            min-height: 800px;
+        }
+    }
+}
+
+.menu-list__accordeon-part-first {
+    background-image: url(../../img/sections/for_meat-eaters.jpg);
+    background-size: cover;
+    background-position: center;
+    &:after {
+        content: 'Для мясоедов';
+    }
+}
+
+.menu-list__accordeon-part-second {
+    background-image: url(../../img/sections/for_vegetarians.jpg);
+    background-size: cover;
+    background-position: 770px;
+    &:after {
+        content: 'Вегетарианское';
+    }
+}
+
+.menu-list__accordeon-part-third {
+    background-image: url(../../img/sections/for_dieticians.jpg);
+    background-size: cover;
+    background-position: 540px;
+    &:after {
+        content: 'Диетическое';
+    }
+}
+
+.menu-list__info {
+    width: 0px;
+    overflow: hidden;
+    background-color: #2f3234;
+    opacity: 0.93;
+    position: relative;
+    @include phones {
+        min-height: 800px;
+        float: left;
+    }
+}
+
+.menu-list__text {
+    width: 100%;
+    opacity: 0;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 60px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-list__item--active {
+    .menu-list__accordeon-part:after {
+        color: #f9b43b;
+    }
+}
+
+.menu-list__item--active-phones {
+    color: #f9b43b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
