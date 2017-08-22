@@ -1,0 +1,131 @@
+.about {
+    background-image: url('../../img/sections/bg-2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container {
+    display: flex; 
+    width: 1100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include laptop {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+    }
+    @include phones {
+        justify-content: flex-start;
+    }
+}
+
+.about__list {
+    list-style: none;
+    margin-top: 30px;
+    @include laptop {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about__list-item {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include laptop {
+        width: 33%;
+    }
+    
+    @include phones {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        align-items: center;
+    }
+}
+
+.about__headline-text {
+    color: #2f3234;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    @include phones {
+        font-size: 50px;
+    }
+}
+
+.about__img-wrap {
+    height: 90px;
+}
+
+.about__img {
+    height: 100%;
+    @include laptop {
+        width: 33vw;
+    }
+}
+
+.about__img-meat {
+    fill: #e25028;
+}
+
+.about__img-hand {
+    fill: #f8b43a;
+}
+
+.about__img-natural {
+    fill: #8ac03e;
+}
+
+.about__headline {
+    color: #2f3234;
+    font-family: Lifehack;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+    @include tablets {
+        font-size: 22px;
+    }
+}
+
+
+.about__text {
+    opacity: 0.8;
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 25px;
+    @include phones {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+.main {
+    background-image: url(../../img/sections/bg-1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.main__container {
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    @include tablets {
+        padding: 0 30px;
+    }
+}
+
+.header {
+    display: flex;
+    height: 90px;
+    width: 950px; 
+    justify-content: flex-end;
+    align-items: center;
+    @include laptop {
+        width: 100%;
+    }
+}
+
+.logo-wrapper {
+    height: 70px;
+    margin-right: auto; 
+}
+
+.logotype {
+    height: 100%;
+}
+
+.header__list {
+    list-style: none;
+    margin-right: 20px;
+    font-size: 0;
+    @include tablets {
+        display: none;
+    }
+}
+
+.header__list-item {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    &:after {
+        display: inline-block;
+        vertical-align: middle;
+        content: ' ';
+        height: 4px;
+        width: 4px;
+        background-color: white;
+        margin: 0 16px;
+        border-radius: 50%;
+  }
+    &:last-child:after {
+        display: none;
+  }
+}
+
+.header__list-link {
+    @include link-decoration;
+    vertical-align: middle;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.order-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #e45028;
+    text-align: center;
+    line-height: 35px;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
+
+.order-button__link {
+    @include link-decoration;
+}
+
+.main__intro {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 950px; 
+    @include laptop {
+        width: 100%;
+    }
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.intro__burger , .intro__text-wrap {
+    flex-basis: 50%;  
+}
+
+.intro__burger {
+    background-image: url(../../img/sections/burger2.png);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    @include laptop {
+        height: 424px;
+    }
+    @include tablets {
+        width: 100%;
+        margin-bottom: 50px;
+        height: 50vh;
+    }
+    @include phones {
+        background-position: center;
+    }
+}
+
+.intro__text-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: -45px;
+}
+
+.intro__text-headline {
+    color: #f9b43b;
+    font-family: Gagalin;
+    font-size: 72px; 
+    @include phones {
+        font-size: 60px;
+    }
+}
+
+.intro__text-main {
+    color: white;
+    font-family: Lifehack;
+    font-size: 65px;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-top: 10px;
+    @include phones {
+        font-size: 48px;
+    }
+}
+
+.header__nav-button {
+    cursor: pointer;
+    width: 24px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}
+
+.header__nav-button-line {
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+
+
+.pop-up-menu {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f3234;
+    opacity: 0.99;
+    top: -100%;
+    overflow: hidden;
+    @include phones {
+        min-height: 800px;
+        top: -800px;
+    }
+}
+
+.header__list-pop-up {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    .header__list-item:after {
+        width: 6px;
+        height: 6px;
+        display: block;
+        margin: 20px auto;
+    }
+    .header__list-item:last-child:after {
+        display: none;
+    }
+}
+
+.pop-up-link {
+    font-size: 24px;
+}
+
+.x-button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-image: url(../../img/sections/X.png);
+    position: absolute;
+    top: 32px;
+    right: 35px;
+}
+
+
+
+
+
+
+

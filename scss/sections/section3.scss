@@ -1,0 +1,333 @@
+.burgers {
+    background-color: #f9b43b;
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgers__container {
+    width: 1100px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include laptop {
+        width: 100%;
+    }
+    @include tablets {
+        height: 100%;
+    }
+}
+
+.burgers__left-arrow {
+    height: 15px;
+    width: 29px;
+    background-image: url(../../img/icons/arrow-scroll.svg);
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    background-size: contain;
+}
+
+.burgers__right-arrow {
+    height: 15px;
+    width: 29px;
+    background-image: url(../../img/icons/arrow-scroll.svg);
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    background-size: contain;
+}
+
+.burgers___slider_wrapper {
+    width: 1000px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    @include laptop {
+        width: 100%;
+    }
+    @include tablets {
+        height: 100%;
+    }
+}
+
+.slider-list {
+    list-style: none;
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include tablets {
+        height: 100%;
+    }
+}
+
+.slider-list__item {
+    width: 1000px;
+    height: 650px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    @include laptop {
+        width: 100%;
+    }
+    @include tablets {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.slider-list__burger-container, .slider-list__text-container {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    @include tablets {
+        align-items: center;
+        height: 50%;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+
+.slider-list__text-container {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slider-list__burger-container {
+    background-image: url(../../img/sections/menu-burger.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: contain;
+    @include tablets {
+        background-position: bottom;
+        height: 45%;
+    }
+}
+
+.slider-list__composition {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: #f08c33;
+    position: relative;
+    transition: 1s;
+    @include tablets {
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    &:hover {
+        background-color: #e35028;
+    }
+    &:after {
+        content: '';
+        width: 46px;
+        height: 44px;
+        background-image: url(../../img/icons/burger.svg);
+        position: absolute;
+        top: 14px;
+        left: 50%;
+        margin-left: -23px;
+    }
+    &:before {
+        content: 'состав';
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translate(-50%);
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &:hover + .slider-list__table-wrapper {
+        opacity: .9;
+        visibility: visible; 
+    }
+}
+
+.slider-list__weight {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    background-image: url(../../img/icons/kkal.svg);
+    position: absolute;
+    bottom: 0;
+    @include tablets {
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+    &:after {
+        content: '1200';
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 20px;
+        font-weight: 400;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &:before {
+        content: 'ккал';
+        color: #ffffff;
+        font-family: Gagalin;
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.slider-list__table-wrapper {
+    width: 270px;
+    height: 332px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    @include tablets {
+        position: absolute;
+        left: 90px;
+        width: 200px;
+    }
+    @include phones {
+        position: absolute;
+        top: 0;
+    }
+    &:hover {
+        opacity: .9;
+        visibility: visible; 
+    }
+}
+
+.slider-list__table {
+    width: 100%;
+    height: 90%;
+}
+
+.slider-list__table-cell {
+    text-align: center;
+}
+
+.slider-list__table-cell:nth-child(2) {
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.slider-list__table-cell:nth-child(3) {
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.slider-list__img-beef{
+    width: 44px;
+    height: 39px;
+    fill: #e25028;
+}
+
+.slider-list__img-buns{
+    width: 48px;
+    height: 30px;
+    fill: #f8b43a;
+}
+
+.slider-list__img-salad{
+    width: 38px;
+    height: 38px;
+    fill: #8ac03e;
+}
+
+.slider-list__img-sauce{
+    width: 41px;
+    height: 43px;
+    fill: #e25028;
+}
+
+.slider-list__img-cucumber{
+    width: 43px;
+    height: 37px;
+    fill: #8cc141;
+}
+
+.slider-list__img-cheese{
+    width: 39px;
+    height: 34px;
+    fill: #f8b43a;
+}
+
+.slider-list__headline {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    @include tablets {
+        text-align: center;
+    }
+    @include phones {
+        font-size: 52px;
+    }
+}
+
+.slider-list__text {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    @include tablets {
+        text-align: center;
+    }
+
+}
+
+.slider-list__price-container {
+    display: flex;
+    align-items: flex-end;
+    @include tablets {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+.slider-list__price {
+    color: #e35028;
+    font-family: Gagalin;
+    font-weight: 400;
+    font-size: 72px;
+    margin-right: 40px;
+    @include phones {
+        font-size: 38px;
+        margin-right: 10px;
+    }
+    &:after {
+        content: 'рублей';
+        font-size: 30px;
+        display: inline-flex;
+        margin-left: 10px;
+        @include phones {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
