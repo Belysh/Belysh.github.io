@@ -52,6 +52,9 @@
 .members-list__item {
     margin-top: 35px;
     position: relative;
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .members-list__member-name {
@@ -61,6 +64,11 @@
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+        color: #f9b43b;
+    }
     &:before {
         content: '';
         width: 9px;
@@ -69,45 +77,38 @@
         display: inline-block;
         vertical-align: middle;
         margin-right: 5px;
+        transition: .4s;
     }
 }
 
 .members-list__member-info {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    @include tablets {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .members-list__item--active {
-    @include tablets {
-            width: 100%;
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-    }
-    .members-list__member-info {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-        @include tablets {
-            width: 100%;
-            margin-left: 0;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-    }
-    }
     .members-list__member-name {
         color: #f9b43b;
     }
-    
-    .members-list__member-name:before {
-        background-image: url(../../img/sections/sct3-arrow-up.png);
+    .members-list__member-name:before  {
+        transform: rotate(180deg);
     }
 }
     
 .members-list__text-wrapper {
     margin-left: 10px;
 }
+
 
 .members-list__image-wrapper {
     width: 100px;

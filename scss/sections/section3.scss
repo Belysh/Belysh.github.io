@@ -22,6 +22,7 @@
 }
 
 .burgers__left-arrow {
+    cursor: pointer;
     height: 15px;
     width: 29px;
     background-image: url(../../img/icons/arrow-scroll.svg);
@@ -31,6 +32,7 @@
 }
 
 .burgers__right-arrow {
+    cursor: pointer;
     height: 15px;
     width: 29px;
     background-image: url(../../img/icons/arrow-scroll.svg);
@@ -40,41 +42,77 @@
 }
 
 .burgers___slider_wrapper {
-    width: 1000px;
+    position: relative;
+    width: 900px;
     height: 650px;
     overflow: hidden;
     @include laptop {
-        width: 100%;
+        width: 700px;
     }
     @include tablets {
         height: 100%;
+        width: 400px;
+    }
+    @include phones {
+        width: 280px;
     }
 }
 
 .slider-list {
     list-style: none;
     display: flex;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
     @include laptop {
-        width: 100%;
+        width: 700px;
     }
     @include tablets {
         height: 100%;
+        width: 400px;
+    }
+    @include phones {
+        width: 280px;
     }
 }
 
 .slider-list__item {
-    width: 1000px;
+    width: 900px;
     height: 650px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: inline-block;
     @include laptop {
-        width: 100%;
+        width: 700px;
     }
     @include tablets {
         height: 100%;
         flex-direction: column;
         justify-content: flex-end;
+        width: 400px;
+    }
+    @include phones {
+        width: 280px;
+    }
+}
+
+.slider-list__item-wrapper {
+    width: 900px;
+    height: 650px;
+    display: flex;
+    white-space: normal;
+    align-items: center;
+    position: relative;
+    @include laptop {
+        width: 700px;
+    }
+    @include tablets {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 400px;
+    }
+    @include phones {
+        width: 280px;
     }
 }
 

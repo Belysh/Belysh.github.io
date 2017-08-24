@@ -216,17 +216,8 @@
 .form__checkout {
     margin-top: 20px;
     align-items: center;
-}
-
-.form__clear-button {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    font-family: 'Ubuntu';
-    font-weight: normal;
-    margin-left: 20px;
-    &:hover {
-        text-decoration: underline;
+    @include laptop {
+        justify-content: center;
     }
 }
 
@@ -239,10 +230,37 @@
     }
 }
 
+.submit-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #e45028;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    @include link-decoration;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
 
 
-
-
+.form__button--reset {
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 13px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    margin-left: 20px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 
 
