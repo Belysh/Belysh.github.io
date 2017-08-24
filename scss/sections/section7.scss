@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .form-page__container {
@@ -76,7 +77,7 @@
 
 .form__input-element:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px rgba(249,180,59,1);
+    border: 2px solid rgba(249,180,59,1);
     
 }
 
@@ -262,17 +263,63 @@
     }
 }
 
+.has-error {
+    background-color: #ff6e6e;
+    box-shadow: none;
+    border: 2px solid #fa0202;
+}
 
+.server-mes {
+    display: none;
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+}
 
+.server-mes__button {
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #e45028;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    @include link-decoration;
+    &:hover {
+        background-color: #c1401e;
+    }
+}
 
+.error-mes {
+    border: 2px solid #ff6e6e;
+}
 
+.success-mes {
+    border: 2px solid #4ff834;
+}
 
+.qtip-mystyle {
+    background-color: #ff6e6e !important;
+    border-color: #fa0202 !important;
+}
 
-
-
-
-
-
+.qtip-tip {
+    border-color: #fa0202 !important;
+}
 
 
 

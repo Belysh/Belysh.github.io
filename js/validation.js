@@ -58,8 +58,8 @@ var validation = (function() {
         at: 'center left'
       },
       right: {
-        my: 'center left',
-        at: 'center right'
+       my: 'bottom center',
+        at: 'top right'
       },
       bottom: {
         my: 'top center',
@@ -93,39 +93,8 @@ var validation = (function() {
       }
     }).trigger('show');
   };
-  
+    
   return {
     validateForm: validateForm
   };
 })()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

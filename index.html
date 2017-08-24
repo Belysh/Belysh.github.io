@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/qtip2.css">
+        <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
         <title>MrBurger</title>
     </head>
     <body>
@@ -743,17 +745,25 @@
                     <div class="form-page__container">
                         <div class="form__headline">Закажите доставку</div>
                         <div class="form-wrapper">
-                            <form class="form">
+                            <form class="form" id="order">
+                                <div class="server-mes success-mes">
+                                    <div class="server-mes__text"></div>
+                                    <div class="server-mes__button">Закрыть</div>
+                                </div>
+                                <div class="server-mes error-mes">
+                                    <div class="server-mes__text"></div>
+                                    <div class="server-mes__button">Закрыть</div>
+                                </div>
                                 <div class="form__content-wrap">
                                     <div class="form__personal-info">
                                         <div class="form__item form__user-name">
                                             <label>
                                                 <p class="form__text">Имя</p>
-                                                <input type="text" class="form__input-element form__input-name">
+                                                <input type="text" class="form__input-element form__input-name" data-position="top" data-content="Вы не ввели ваше имя">
                                             </label>
                                             <label>
                                                 <p class="form__text">Телефон</p>
-                                                <input type="text" class="form__input-element form__input-tel">
+                                                <input type="text" class="form__input-element form__input-tel" data-position="right" data-content="Вы не ввели телефон">
                                             </label>
                                         </div>
                                         <div class="form__item form__user-street">
@@ -881,9 +891,10 @@
         <script src="js/popup.js"></script>
         <script src="js/team-list.js"></script>
         <script src="js/map.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/form.js"></script>
         <script src="js/validation.js"></script>
         <script src="js/popup-comments.js"></script>
+        <script src="js/qtip2.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

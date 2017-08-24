@@ -5,7 +5,7 @@ var MyForm = function(form, url) {
 };
 
 MyForm.prototype.addListener = function(form) {
-  $('.form').on('submit', $.proxy(this.submitForm, this));
+  $(form).on('submit', $.proxy(this.submitForm, this));
 };
 
 MyForm.prototype.submitForm = function(e) {
@@ -19,13 +19,19 @@ MyForm.prototype.submitForm = function(e) {
         status = ans.status;
       if ((status = 'OK')) {
         $.form.trigger('reset');
-        $form.find('.success-mes').text(mes).show();
+        $form.find('.server-mes__text').text(mes);
+        $form.find('.success-mes').show();
       } else {
-        $form.find('.error-mes').text(mes).show();
+        $form.find('.server-mes__text').text(mes);
+        $form.find('.error-mes').show();
       }
     });
   }
 };
+
+$('.server-mes__button').on('click', function () {
+      $('.server-mes').hide();
+});
 
 MyForm.prototype.ajaxForm = function(form, url) {
   if (!validation.validateForm(form)) {
@@ -42,7 +48,27 @@ MyForm.prototype.ajaxForm = function(form, url) {
     data: data
   }).fail(function(ans) {
     console.log('Проблемы в PHP');
-    form.find('.error-mes').text('На сервере произошла ошибка').show();
+    form.find('.server-mes__text').text('На сервере произошла ошибка');
+    form.find('.error-mes').show();
   });
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

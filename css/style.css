@@ -1560,7 +1560,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .form-page__container {
   width: 1100px;
@@ -1652,8 +1653,7 @@
 
 .form__input-element:focus {
   outline: none;
-  -webkit-box-shadow: 0px 0px 0px 2px #f9b43b;
-  box-shadow: 0px 0px 0px 2px #f9b43b; }
+  border: 2px solid #f9b43b; }
 
 .form__input-name, .form__input-tel {
   width: 220px; }
@@ -1844,6 +1844,64 @@
   cursor: pointer; }
   .form__button--reset:hover {
     text-decoration: underline; }
+
+.has-error {
+  background-color: #ff6e6e;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid #fa0202; }
+
+.server-mes {
+  display: none;
+  width: 300px;
+  background-color: white;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+  font-weight: normal; }
+
+.server-mes__button {
+  width: 100px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #e45028;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Ubuntu';
+  font-weight: normal; }
+  .server-mes__button:hover {
+    background-color: #c1401e; }
+
+.error-mes {
+  border: 2px solid #ff6e6e; }
+
+.success-mes {
+  border: 2px solid #4ff834; }
+
+.qtip-mystyle {
+  background-color: #ff6e6e !important;
+  border-color: #fa0202 !important; }
+
+.qtip-tip {
+  border-color: #fa0202 !important; }
 
 .map {
   background-image: url(../../img/sections/bg-9.jpg);
