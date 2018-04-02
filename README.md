@@ -1,2 +1,2 @@
 # MrBurger is a brilliant site (no)
-Пробный коммит, так как GitHub Pages не хочет выгружать прошлый
+This site was created especially for computer science lessons by Belyaev Kirill and Gritsenko Alexey
